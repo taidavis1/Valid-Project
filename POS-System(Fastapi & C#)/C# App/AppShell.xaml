@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="nails_pos_sys.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:nails_pos_sys"
+    Shell.FlyoutBehavior="Flyout"
+    FlyoutBackgroundColor="#f2f5f5"
+    Shell.TabBarIsVisible="False"
+>
+
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout HeightRequest="100" Padding="20" BackgroundColor="#07e2fa">
+            <Image Source="dashboard_icon.png" WidthRequest="50" HeightRequest="50"></Image>
+            <Label Text="Dashboard" HorizontalTextAlignment="Center"></Label>
+        </VerticalStackLayout>
+
+    </Shell.FlyoutHeader>
+
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions=".30*, .60*" RowDefinitions="*,*,*" ColumnSpacing="10" Padding="10">
+                <HorizontalStackLayout Grid.Row="0" Spacing="20" Margin="20">
+                    <Image Source="{Binding Icon}" WidthRequest="50" HeightRequest="30"></Image>
+                    <Label Text="{Binding Title}" HeightRequest="20"></Label>
+                </HorizontalStackLayout>
+            </Grid>
+
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <FlyoutItem Title="Dashboard" FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
+            Title="MainPage"
+            Icon="home_icon.png"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage"
+         />
+        <ShellContent
+            Title="Service"
+            Icon="service_icon.png"
+            ContentTemplate="{DataTemplate local:Service}"
+            Route="Service" />
+        <ShellContent
+            Title="Home"
+            Icon="employee_icon.jpeg"
+            ContentTemplate="{DataTemplate local:Home}"
+            Route="Home" />
+    </FlyoutItem>
+
+</Shell>
+

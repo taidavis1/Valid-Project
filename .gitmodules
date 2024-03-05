@@ -1,0 +1,6 @@
+[submodule "Data-Pipeline"]
+	path = Data-Pipeline
+	url = https://github.com/taidavis1/Data-Pipeline
+[submodule "LLM Project/Pythia_Megatron"]
+	path = LLM Project/Pythia_Megatron
+	url = https://github.com/taidavis1/Pythia_Megatron.git
