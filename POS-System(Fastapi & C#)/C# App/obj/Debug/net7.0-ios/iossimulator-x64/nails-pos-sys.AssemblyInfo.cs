@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("nails-pos-sys")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+4425ca6d157a575bd5d4fa1c89cc5453aaf2163a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+4d82fb6774ef4f8de672d52acc2369cd780b5160")]
 [assembly: System.Reflection.AssemblyProductAttribute("nails-pos-sys")]
 [assembly: System.Reflection.AssemblyTitleAttribute("nails-pos-sys")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
